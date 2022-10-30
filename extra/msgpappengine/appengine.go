@@ -3,7 +3,7 @@ package msgpappengine
 import (
 	"reflect"
 
-	"github.com/vmihailenco/msgpack/v5"
+	"go.oneofone.dev/msgpack/v5"
 	ds "google.golang.org/appengine/datastore"
 )
 

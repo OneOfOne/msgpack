@@ -1,4 +1,4 @@
-module github.com/vmihailenco/msgpack/v5
+module go.oneofone.dev/msgpack/v5
 
 go 1.19
 

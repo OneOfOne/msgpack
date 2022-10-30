@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/vmihailenco/msgpack/v5"
+	"go.oneofone.dev/msgpack/v5"
 )
 
 func ExampleMarshal() {
@@ -217,5 +217,5 @@ func ExampleMarshal_escapedNames() {
 		panic(err)
 	}
 	fmt.Printf("%#v\n", item)
-	//output: msgpack_test.Item{SomethingSpecial:0x7b, HelloWorld:"hello!"}
+	// output: msgpack_test.Item{SomethingSpecial:0x7b, HelloWorld:"hello!"}
 }

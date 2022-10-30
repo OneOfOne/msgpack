@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/vmihailenco/msgpack/v5"
+	"go.oneofone.dev/msgpack/v5"
 )
 
 type NoIntern struct {

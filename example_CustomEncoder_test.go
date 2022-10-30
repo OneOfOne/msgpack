@@ -3,7 +3,7 @@ package msgpack_test
 import (
 	"fmt"
 
-	"github.com/vmihailenco/msgpack/v5"
+	"go.oneofone.dev/msgpack/v5"
 )
 
 type customStruct struct {
@@ -11,8 +11,10 @@ type customStruct struct {
 	N int
 }
 
-var _ msgpack.CustomEncoder = (*customStruct)(nil)
-var _ msgpack.CustomDecoder = (*customStruct)(nil)
+var (
+	_ msgpack.CustomEncoder = (*customStruct)(nil)
+	_ msgpack.CustomDecoder = (*customStruct)(nil)
+)
 
 func (s *customStruct) EncodeMsgpack(enc *msgpack.Encoder) error {
 	return enc.EncodeMulti(s.S, s.N)

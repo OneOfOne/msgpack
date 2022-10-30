@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/vmihailenco/msgpack/v5"
+	"go.oneofone.dev/msgpack/v5"
 )
 
 func BenchmarkDiscard(b *testing.B) {

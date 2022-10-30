@@ -4,7 +4,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/vmihailenco/msgpack/v5/msgpcode"
+	"go.oneofone.dev/msgpack/v5/msgpcode"
 )
 
 // EncodeUint8 encodes an uint8 in 2 bytes preserving type of the number.

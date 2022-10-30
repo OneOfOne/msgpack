@@ -5,7 +5,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/vmihailenco/msgpack/v5/msgpcode"
+	"go.oneofone.dev/msgpack/v5/msgpcode"
 )
 
 type extInfo struct {
