@@ -367,6 +367,9 @@ var decoderTests = []decoderTest{
 }
 
 func TestDecoder(t *testing.T) {
+	if testing.Short() {
+		t.Skip("skipping in race/short mode, it can cause memory issues")
+	}
 	for i, test := range decoderTests {
 		err := msgpack.Unmarshal(test.b, test.out)
 		if err == nil {
